@@ -53,22 +53,3 @@ ax4.set_ylabel("Sp02 (%)")
 
 # mostra grafico
 plt.show()
-
-"""
-P50 = 27.0 
-n = 2.7
-sat = 100*(1 / (1 + (P50 / PO2)**n))
-diff = []
-for i in range(len(PO2)):
-    diff.append(sat[i] - saturazione(PO2[i]))
-fig, (ax1, ax2) = plt.subplots(2)
-ax1.plot(PO2, saturazione(PO2), label='Curva di saturazione dell\'emoglobina')
-plt.xlabel("pO2")
-plt.ylabel("Sp02 (%)")
-ax2.plot(diff)
-ax2.set_title("Differenza tra la curva di saturazione e la curva di Hill")
-ax2.set_ylim(-10, 10)
-ax2.axhline(0, color='k', linestyle='--')
-plt.xlabel("pO2")
-plt.ylabel("Sp02 (%)")
-plt.show()"""
