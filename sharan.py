@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-def sat(pO2, pCO2=40, pH=7.4):
+def saturazione(pO2, pCO2=40, pH=7.4):
     C8 = 10**(-pH)
     K1 = 10**10 #cm3/mol
     K2 = 5*10**9 #cm3/mol
@@ -15,5 +15,5 @@ def sat(pO2, pCO2=40, pH=7.4):
     return s
 
 pO2 = np.linspace(0, 100, 100)
-plt.plot(pO2, sat(pO2))
+plt.plot(pO2, saturazione(pO2))
 plt.show()
