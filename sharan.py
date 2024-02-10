@@ -4,7 +4,7 @@ def sat(pO2, pCO2=40, pH=7.4):
     C8 = 10**(-pH)
     K1 = 10**10 #cm3/mol
     K2 = 5*10**9 #cm3/mol
-    K = 8.365*10**(-15) #(mol/cm3)^l/(mmHg)^n
+    K = 8.365*10**(3) #valore corretto da (-15) a (3) dopo simulazione
     n = 2.7038757
     l = 1.0114518
     K5 = 3.99*10**(-4)
